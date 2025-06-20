@@ -6,10 +6,7 @@ const nav = document.querySelector('nav');
 
 const resumeBtns = document.querySelectorAll('.resume-btn');
 
-const arrowRight = document.querySelector('.portfolio-box .navigation .arrow-right');
-const arrowLeft = document.querySelector('.portfolio-box .navigation .arrow-left');
 
-let currentSlide = 0;
 
 
 menuIcon.addEventListener('click', () => {
@@ -69,41 +66,4 @@ resumeBtns.forEach((btn, index) => {
         });
         resumeDetails[index].classList.add('active');
     });
-});
-
-const activePortfolio = () => {
-    const imgSlide = document.querySelector('.portfolio-carousel .img-slide');
-    const portfolioDetails = document.querySelectorAll('.portfolio-details');
-
-
-    imgSlide.style.transform = `translateX(calc(${currentSlide * -100}% - ${currentSlide * 2}rem))`;
-
-    portfolioDetails.forEach(detail => {
-        detail.classList.remove('active');
-    });
-    portfolioDetails[currentSlide].classList.add('active');
-
-}
-
-arrowRight.addEventListener('click', () => {
-    if (currentSlide < 3) {
-        currentSlide++;
-        arrowLeft.classList.remove('disabled');
-    }
-    else {
-        currentSlide = 4;
-        arrowRight.classList.add('disabled');
-    }
-    activePortfolio();
-});
-arrowLeft.addEventListener('click', () => {
-    if (currentSlide > 1) {
-        currentSlide--;
-        arrowRight.classList.remove('disabled');
-    }
-    else {
-        currentSlide = 0;
-        arrowLeft.classList.add('disabled');
-    }
-    activePortfolio();
 });
