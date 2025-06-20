@@ -7,7 +7,14 @@ let Projects = [
     {
         headProj: "Pack&Go E-commerce",
         descProj: "Complete e-commerce website for travel bags and accessories, featuring responsive web design for mobile and desktop. Integrated Firebase authentication with Google sign-in, secure checkout with PayPal, and Firestore for real-time order tracking. Included admin dashboard for product and user management.",
-        techProj: "HTML, CSS, JavaScript | Firebase Authentication | Firestore | PayPal API | Hosting netlify.com",
+        techProj: `
+        <span class="tech-icon" data-tooltip="HTML5"><i class='bx bxl-html5' style='color:#e34c26'></i></span>
+        <span class="tech-icon" data-tooltip="CSS3"><i class='bx bxl-css3' style='color:#264de4'></i></span>
+        <span class="tech-icon" data-tooltip="Javascript"><i class='bx bxl-javascript' style='color:#f0db4f'></i></span>
+        <span class="tech-icon" data-tooltip="Firebase"><i class='bx bxl-firebase' style='color:#ffcb2b'></i></span>
+        <span class="tech-icon" data-tooltip="Paypal APi"><i class='bx bxl-paypal' style='color:#003087'></i></span>
+        <span class="tech-icon" data-tooltip="Netlify Hosting"><i class='bx bxl-netlify' style='color:#00c7b7'></i></span>
+`,
         demoProj: "https://packgotrial.netlify.app/",
         githubProj: "https://github.com/Badawy24/Pack-Go",
         imgProj: "./img/projects/packandgo.png",
@@ -15,15 +22,32 @@ let Projects = [
     {
         headProj: "Early Detection of ASD",
         descProj: "Inclusive website for early autism diagnosis and support, featuring a user-friendly, responsive design for both web and mobile. Integrated bilingual support (Arabic and English) to enhance accessibility. Implemented machine learning models to assist in early detection and analysis, improving diagnostic accuracy. Ensured clear guidelines and secure handling of sensitive data. ",
-        techProj: "HTML, CSS, JavaScript, Bootstrap | PHP (Laravel framework) | MySQL | Python | Flask ",
+        techProj: `
+        <span class="tech-icon" data-tooltip="HTML5"><i class='bx bxl-html5' style='color:#e34c26'></i></span>
+        <span class="tech-icon" data-tooltip="CSS3"><i class='bx bxl-css3' style='color:#264de4'></i></span>
+        <span class="tech-icon" data-tooltip="Javascript"><i class='bx bxl-javascript' style='color:#f0db4f'></i></span>
+        <span class="tech-icon" data-tooltip="Bootstrap5"><i class='bx bxl-bootstrap' style='color:#563d7c'></i></span>
+        <span class="tech-icon" data-tooltip="PHP"><i class='bx bxl-php' style='color:#8892be'></i></span>
+        <span class="tech-icon" data-tooltip="Laravel"><i class='bx bxs-component' style='color:#ff2d20'></i></span>
+        <span class="tech-icon" data-tooltip="MySql"><i class='bx bxs-data' style='color:#4db33d'></i></span>
+        <span class="tech-icon" data-tooltip="Python"><i class='bx bxl-python' style='color:#3776ab'></i></span>
+
+`,
         demoProj: "",
         githubProj: "https://github.com/Badawy24/Autism_Graduation_Project",
         imgProj: "./img/projects/01.png",
     },
     {
-        headProj: "HairPilot Salon With AI",
+        headProj: "Hair Pilot Salon With AI",
         descProj: "Smart Angular-based web app for personalized haircut suggestions using AI-powered face shape detection. Features include real-time recommendations with visual previews, online salon booking stored in Firestore, form validation, and a responsive UI. Includes service galleries, booking system, and organized navigation.",
-        techProj: "Angular | face-api.js | Firebase Firestore | HTML, CSS, Bootstrap",
+        techProj: `
+                <span class="tech-icon" data-tooltip="Angular"><i class='bx bxl-angular' style='color:#dd0031'></i></span>
+                <span class="tech-icon" data-tooltip="face-api"><i class='bx bxs-brain' style='color:#ff6f61'></i></span>
+                <span class="tech-icon" data-tooltip="Firebase"><i class='bx bxl-firebase' style='color:#ffcb2b'></i></span>
+                <span class="tech-icon" data-tooltip="HTML5"><i class='bx bxl-html5' style='color:#e34c26'></i></span>
+                <span class="tech-icon" data-tooltip="CSS3"><i class='bx bxl-css3' style='color:#264de4'></i></span>
+                <span class="tech-icon" data-tooltip="Bootstrap5"><i class='bx bxl-bootstrap' style='color:#563d7c'></i></span>
+`,
         demoProj: "https://hair-pilot.vercel.app/home",
         githubProj: "https://github.com/Badawy24/HairPilot",
         imgProj: "./img/projects/hairpilot.png"
@@ -31,7 +55,13 @@ let Projects = [
     {
         headProj: "Coffee Corner Landing Page",
         descProj: "Designed and developed a modern, responsive landing page for a coffee shop using vanilla HTML, CSS, and JavaScript. Features smooth scrolling, a clean menu layout with product images and pricing, and optimized responsiveness across all devices. Perfect for showcasing services and engaging customers online.",
-        techProj: "HTML, CSS, JavaScript | Google Fonts | Animations",
+        techProj: `
+        <span class="tech-icon" data-tooltip="HTML5"><i class='bx bxl-html5' style='color:#e34c26'></i></span>
+        <span class="tech-icon" data-tooltip="CSS3"><i class='bx bxl-css3' style='color:#264de4'></i></span>
+        <span class="tech-icon" data-tooltip="Javascript"><i class='bx bxl-javascript' style='color:#f0db4f'></i></span>
+        <span class="tech-icon" data-tooltip="Animation"><i class='bx bx-font' style='color:#000000'></i></span>
+        <span class="tech-icon" data-tooltip="GitHub"><i class='bx bxl-github' style='color:#171515'></i></span>
+`,
         demoProj: "https://badawy24.github.io/Coffee_Corner/",
         githubProj: "https://github.com/Badawy24/Coffee_Corner",
         imgProj: "./img/projects/coffeecorner.png"
@@ -41,12 +71,14 @@ let Projects = [
 
 Projects.forEach((project) => {
     box.innerHTML += `
-        <div class="portfolio-details ${counter === 1 ?'active':''}">
-            <p class="numb">${counter}</p>
+        <div class="portfolio-details ${counter === 1 ? 'active' : ''}">
+            <p class="numb">0${counter}</p>
             <h3>${project.headProj}</h3>
             <p>${project.descProj}</p>
             <div class="tech">
-                <p>${project.techProj}</p>
+            <p>
+            ${project.techProj}
+            </p>
             </div>
             <div class="live-github">
                 <a href="${project.demoProj}" target="_blank">
