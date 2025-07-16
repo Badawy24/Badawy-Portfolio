@@ -5,6 +5,22 @@ let imgBox = document.getElementById("img-slide");
 
 let Projects = [
     {
+        headProj: "Paper Shelf - Online Bookstore",
+        descProj: "A Full-Featured Online Bookstore Platform (Front-End & Back-End & AI) Offering Multi-Role Access (Admin, Author, User) with Advanced Authentication, Ai Summary of Books, Complete E-Commerce Experience, and Integrated Payment Gateway.",
+        techProj: `
+        <span class="tech-icon" data-tooltip="Angular"><i class='bx bxl-angular' style='color:#dd0031'></i></span>
+        <span class="tech-icon" data-tooltip="TypeScript"><i class='bx bxl-typescript' style='color:#3178c6'></i></span>
+        <span class="tech-icon" data-tooltip="Bootstrap 5"><i class='bx bxl-bootstrap' style='color:#7952b3'></i></span>
+        <span class="tech-icon" data-tooltip="Node.js"><i class='bx bxl-nodejs' style='color:#68a063'></i></span>
+        <span class="tech-icon" data-tooltip="MongoDB"><i class='bx bxl-mongodb' style='color:#47a248'></i></span>
+        <span class="tech-icon" data-tooltip="Paypal API"><i class='bx bxl-paypal' style='color:#003087'></i></span>
+        <span class="tech-icon" data-tooltip="AI Integration"><i class='bx bxs-brain' style='color:#ff6f61'></i></span>
+`,
+        demoProj: "https://paper-shelf-front-endd-pent.vercel.app/",
+        githubProj: "https://github.com/KareemA-Saad/PaperShelf-backEnd",
+        imgProj: "./img/projects/PaperShelf.png",
+    },
+    {
         headProj: "Pack&Go E-commerce",
         descProj: "Complete e-commerce website for travel bags and accessories, featuring responsive web design for mobile and desktop. Integrated Firebase authentication with Google sign-in, secure checkout with PayPal, and Firestore for real-time order tracking. Included admin dashboard for product and user management.",
         techProj: `
