@@ -31,32 +31,6 @@ A professional and fully responsive personal portfolio website showcasing my ski
 
 ---
 
-## 🗂️ Portfolio Projects
-
-### 1️⃣ **Pack&Go E-commerce**
-Complete e-commerce website for travel bags and accessories with PayPal integration.  
-🔗 [Live Demo](https://packgotrial.netlify.app/) | 📂 [GitHub Repo](https://github.com/Badawy24/Pack-Go)
-
----
-
-### 2️⃣ **Early Detection of ASD**
-Inclusive website for early autism diagnosis with ML backend (Flask + Laravel).  
-📂 [GitHub Repo](https://github.com/Badawy24/Autism_Graduation_Project)
-
----
-
-### 3️⃣ **HairPilot Salon With AI**
-AI-powered haircut suggestion app using **face-api.js** with Angular & Firebase.  
-🔗 [Live Demo](https://hair-pilot.vercel.app/home) | 📂 [GitHub Repo](https://github.com/Badawy24/HairPilot)
-
----
-
-### 4️⃣ **Coffee Corner Landing Page**
-A clean landing page for a coffee shop using vanilla JavaScript & animations.  
-🔗 [Live Demo](https://badawy24.github.io/Coffee_Corner/) | 📂 [GitHub Repo](https://github.com/Badawy24/Coffee_Corner)
-
----
-
 ## 📬 Contact Me
 
 - 📧 **Email:** [abdelrahman.ahmed2410@gmail.com](mailto:abdelrahman.ahmed2410@gmail.com)
