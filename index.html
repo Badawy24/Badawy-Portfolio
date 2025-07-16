@@ -353,7 +353,7 @@
             </div>
 
             <div class="contact-box">
-                <form action="https://formsubmit.co/abdelrahman.ahmed2410@gmail.com" method="POST" id="contact-form">
+                <form id="contact-form">
                     <h2 class="heading">Conatct <span>Me!</span></h2>
                     <div id="success-message" style="
                         display:none;
@@ -391,6 +391,12 @@
     </section>
 
     <!-- End Conatct -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function(){
+        emailjs.init("JRL5vQd0haLal9xjQ");
+      })();
+    </script>
     <script src="./js/darkmode.js"></script>
     <script src="./js/proj.js"></script>
     <script src="./js/skills.js"></script>
