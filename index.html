@@ -353,8 +353,32 @@
             </div>
 
             <div class="contact-box">
-                <form action="" method="POST">
+                <form action="https://formsubmit.co/abdelrahman.ahmed2410@gmail.com" method="POST" id="contact-form">
                     <h2 class="heading">Conatct <span>Me!</span></h2>
+                    <div id="success-message" style="
+                        display:none;
+                        padding: 10px 15px;
+                        margin-bottom: 10px;
+                        border: 1px solid transparent;
+                        border-radius: 4px;
+                        color: #155724;
+                        background-color: #d4edda;
+                        border-color: #c3e6cb;
+                        text-align: center;">
+                        ✅ Your message has been sent successfully!
+                    </div>
+                    <div id="error-message" style="
+                        display:none;
+                        padding: 10px 15px;
+                        margin-bottom: 10px;
+                        border: 1px solid transparent;
+                        border-radius: 4px;
+                        color: #721c24;
+                        background-color: #f8d7da;
+                        border-color: #f5c6cb;
+                        text-align: center;">
+                        ❌ There was an error sending your message. Please try again.
+                    </div>
                     <div class="field-box">
                         <input type="text" name="name" placeholder="Please Enter Your Name ..." required>
                         <input type="email" name="email" placeholder="Please Enter Your Email ..." required>
@@ -370,6 +394,7 @@
     <script src="./js/darkmode.js"></script>
     <script src="./js/proj.js"></script>
     <script src="./js/skills.js"></script>
+    <script src="./js/form.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
