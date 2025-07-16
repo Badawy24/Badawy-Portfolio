@@ -611,6 +611,10 @@ section.active {
     gap: 2rem;
 }
 
+.contact-box .field-box #title {
+    grid-column: 1 / -1;
+}
+
 .contact-box .field-box textarea {
     grid-column: 1 / -1;
     height: 25rem;
@@ -635,6 +639,32 @@ section.active {
 .contact-box .btn {
     margin-top: 2rem;
     cursor: pointer;
+}
+
+#success-message {
+    display: none;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#error-message {
+    display: none;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 /* Responsive Screens */

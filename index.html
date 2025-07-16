@@ -44,9 +44,9 @@
                 dynamic team and build impactful software.</p>
 
             <div class="social-section">
-                <a href="https://drive.google.com/file/d/1GMAOga9CQ02Z6K0vfHTlYV6BzgvVLbts/view?usp=drive_link" class="btn"
-                    target="_blank">
-                    Download CV
+                <a href="https://drive.google.com/file/d/1GMAOga9CQ02Z6K0vfHTlYV6BzgvVLbts/view?usp=drive_link"
+                    class="btn" target="_blank">
+                    Perview CV
                 </a>
                 <div class="social">
                     <a href="https://github.com/Badawy24" target="_blank" title="Github" class="bx-burst-hover"><i
@@ -294,7 +294,7 @@
             <article class="portfolio-box">
                 <div class="portfolio-carousel">
                     <div id="img-slide" class="img-slide">
-                    <!-- From proj.js -->
+                        <!-- From proj.js -->
                     </div>
                 </div>
                 <div class="navigation">
@@ -353,37 +353,26 @@
             </div>
 
             <div class="contact-box">
+                <!-- Start Alert Message -->
+                <div id="success-message">
+                    Your message has been sent successfully!
+                </div>
+                <div id="error-message">
+                    There was an error sending. Please try again.
+                </div>
+                <!-- End Alert Message -->
+
                 <form id="contact-form">
                     <h2 class="heading">Conatct <span>Me!</span></h2>
-                    <div id="success-message" style="
-                        display:none;
-                        padding: 10px 15px;
-                        margin-bottom: 10px;
-                        border: 1px solid transparent;
-                        border-radius: 4px;
-                        color: #155724;
-                        background-color: #d4edda;
-                        border-color: #c3e6cb;
-                        text-align: center;">
-                        ✅ Your message has been sent successfully!
-                    </div>
-                    <div id="error-message" style="
-                        display:none;
-                        padding: 10px 15px;
-                        margin-bottom: 10px;
-                        border: 1px solid transparent;
-                        border-radius: 4px;
-                        color: #721c24;
-                        background-color: #f8d7da;
-                        border-color: #f5c6cb;
-                        text-align: center;">
-                        ❌ There was an error sending your message. Please try again.
-                    </div>
                     <div class="field-box">
-                        <input type="text" name="name" placeholder="Please Enter Your Name ..." required>
+                        <input type="text" name="name" placeholder="Please Enter Your Name ..." required min="3"
+                            max="40">
                         <input type="email" name="email" placeholder="Please Enter Your Email ..." required>
+                        <input id="title" type="text" name="title" placeholder="Please Enter Title ..." required
+                            max="100">
                         <textarea name="message" placeholder="Please Enter Your Message ..." required></textarea>
                     </div>
+
                     <input class="btn" type="submit" value="Send Message">
                 </form>
             </div>
@@ -393,42 +382,36 @@
     <!-- End Conatct -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
-      (function(){
-        emailjs.init("JRL5vQd0haLal9xjQ");
-      })();
+        (function () {
+            emailjs.init("JRL5vQd0haLal9xjQ");
+        })();
     </script>
     <script>
         const form = document.getElementById('contact-form');
         const successMsg = document.getElementById('success-message');
         const errorMsg = document.getElementById('error-message');
-    
-       form.addEventListener('submit', function(e) {
-            e.preventDefault();
-        
-            const formData = {
-                name: form.name.value,
-                email: form.email.value,
-                message: form.message.value
-            };
-        
-            emailjs.send('service_0cwq7ky', 'template_3oyo5vw', formData)
-            .then(function() {
-                successMsg.style.display = 'block';
-                errorMsg.style.display = 'none';
-                form.reset();
-                setTimeout(() => {
-                    successMsg.style.display = 'none';
-                }, 4000);
-            }, function(error) {
-                successMsg.style.display = 'none';
-                errorMsg.style.display = 'block';
-                setTimeout(() => {
-                    errorMsg.style.display = 'none';
-                }, 4000);
-            });
-        });
 
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm('service_0cwq7ky', 'template_x2731by', this)
+                .then(function () {
+                    successMsg.style.display = 'block';
+                    errorMsg.style.display = 'none';
+                    form.reset();
+                    setTimeout(() => {
+                        successMsg.style.display = 'none';
+                    }, 4000);
+                }, function (error) {
+                    successMsg.style.display = 'none';
+                    errorMsg.style.display = 'block';
+                    setTimeout(() => {
+                        errorMsg.style.display = 'none';
+                    }, 4000);
+                });
+        });
     </script>
+
     <script src="./js/darkmode.js"></script>
     <script src="./js/proj.js"></script>
     <script src="./js/skills.js"></script>
